@@ -4,7 +4,6 @@ import axios from 'axios';
 const fetchGreeting = createAsyncThunk('greeting/fetchGreeting', async () => {
   const response = await axios.get('http://localhost:3000/api/v1/greetings');
   const { greeting } = response.data;
-  console.log(greeting);
   return greeting;
 });
 
