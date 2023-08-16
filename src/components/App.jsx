@@ -1,12 +1,13 @@
-import Greeting from './Greeting';
+import { Routes, Route } from 'react-router-dom';
 
+import Greeting from './Greeting';
 import '../assets/stylesheets/App.scss';
 
 function App() {
   return (
-    <main className="app">
-      <Greeting />
-    </main>
+    <Routes>
+      <Route path="/" element={<Greeting />} />
+    </Routes>
   );
 }
 
